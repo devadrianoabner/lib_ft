@@ -1,0 +1,13 @@
+# Ficheiros objeto gerados na compilação
+*.o
+
+# Pacote final da biblioteca
+*.a
+
+# Executáveis gerados para testes locais
+a.out
+*.out
+test
+
+# Ficheiros ocultos de sistema
+.DS_Store
