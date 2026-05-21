@@ -11,3 +11,6 @@ test
 
 # Ficheiros ocultos de sistema
 .DS_Store
+
+# Abstrações
+lib_ft.txt

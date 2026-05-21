@@ -14,5 +14,5 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_isalpha.c
+SRCS = ft_isalpha.c 
 OBJS = $(SRCS:.c=.o)
