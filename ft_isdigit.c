@@ -6,13 +6,13 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 20:42:59 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/21 02:07:36 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 02:39:03 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

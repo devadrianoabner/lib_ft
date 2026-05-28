@@ -6,15 +6,15 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 21:16:03 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/21 02:07:31 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 02:37:49 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_isprint(char c)
+int	ft_isprint(int c)
 {
-	if (c <= 32 && c <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

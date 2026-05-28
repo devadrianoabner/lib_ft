@@ -6,13 +6,13 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 19:13:27 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/21 02:07:44 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 02:38:20 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z')
 		|| (c >= 'a' && c <= 'z'))

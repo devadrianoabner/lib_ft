@@ -6,13 +6,13 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 21:21:11 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/21 02:07:12 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 02:46:56 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	long	i;
 

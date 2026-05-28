@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/21 05:06:02 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/27 23:57:31 by adrianda         ###   ########.fr       */
+/*   Created: 2026/05/27 19:48:54 by adrianda          #+#    #+#             */
+/*   Updated: 2026/05/28 19:21:50 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char		*d_ptr;
-	const unsigned char	*s_ptr;
-	size_t				i;
+	int		i;
+	char	*ptr_s;
 
-	if (!dest && !src)
-		return (NULL);
-	d_ptr = (unsigned char *) dest;
-	s_ptr = (const unsigned char *) src;
-	i = 0;
-	while (n > i)
+	ptr_s = (char *) s;
+	i = ft_strlen(ptr_s);
+	if (c == 0)
+		return (&ptr_s[i]);
+	while (i >= 0)
 	{
-		d_ptr[i] = s_ptr[i];
-		i++;
+		if (ptr_s[i] == c)
+			return (&ptr_s[i]);
+		i--;
 	}
-	return (dest);
+	return (NULL);
 }
