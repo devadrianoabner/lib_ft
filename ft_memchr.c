@@ -6,7 +6,7 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 17:02:25 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/28 02:26:52 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 20:20:41 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	unsigned char		param;
 
 	ptr = (const unsigned char *) str;
-	param = (unsigned char) c;
+	param = (char) c;
 	i = 0;
 	while (n > i)
 	{
-		if (ptr[i] == c)
+		if (ptr[i] == param)
 			return ((void *) &ptr[i]);
 		i++;
 	}

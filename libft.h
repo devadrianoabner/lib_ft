@@ -6,7 +6,7 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 22:21:59 by adrianda          #+#    #+#             */
-/*   Updated: 2026/05/28 02:49:33 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/05/28 20:53:14 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ int			ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t		ft_strlen(const char *str);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
 
 #endif
