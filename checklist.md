@@ -62,7 +62,7 @@
 ## Parte 3: (Listas Encadeadas)
 - [x] ft_lstnew.c
 - [x] ft_lstadd_front.c
-- [ ] ft_lstsize.c
+- [x] ft_lstsize.c
 - [ ] ft_lstlast.c
 - [ ] ft_lstadd_back.c
 - [ ] ft_lstdelone.c

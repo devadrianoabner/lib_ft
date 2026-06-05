@@ -6,7 +6,7 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 22:21:59 by adrianda          #+#    #+#             */
-/*   Updated: 2026/06/05 08:22:34 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/06/05 09:16:14 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ int			ft_atoi(const char *nptr);
 //Listas encadeadas
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
+int			ft_lstsize(t_list *lst);
 #endif
