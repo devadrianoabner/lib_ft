@@ -64,7 +64,7 @@
 - [x] ft_lstadd_front.c
 - [x] ft_lstsize.c
 - [x] ft_lstlast.c
-- [ ] ft_lstadd_back.c
+- [x] ft_lstadd_back.c
 - [ ] ft_lstdelone.c
 - [ ] ft_lstclear.c
 - [ ] ft_lstiter.c
