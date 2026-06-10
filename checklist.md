@@ -68,4 +68,4 @@
 - [x] ft_lstdelone.c
 - [x] ft_lstclear.c
 - [x] ft_lstiter.c
-- [ ] ft_lstmap.c
+- [x] ft_lstmap.c
