@@ -35,7 +35,7 @@
 - [x] ft_atoi.c
 
 ### Alocação Dinâmica Base
-- [ ] ft_calloc.c
+- [x] ft_calloc.c
 - [ ] ft_strdup.c
 
 ---
