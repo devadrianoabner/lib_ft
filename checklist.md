@@ -55,7 +55,7 @@
 - [x] ft_putchar_fd.c
 - [x] ft_putstr_fd.c
 - [x] ft_putendl_fd.c
-- [ ] ft_putnbr_fd.c
+- [x] ft_putnbr_fd.c
 
 ---
 
