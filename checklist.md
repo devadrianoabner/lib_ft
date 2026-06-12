@@ -36,14 +36,14 @@
 
 ### Alocação Dinâmica Base
 - [x] ft_calloc.c
-- [ ] ft_strdup.c
+- [x] ft_strdup.c
 
 ---
 
 ## Parte 2: Funções Adicionais
 
 ### Manipulação Avançada de Strings
-- [ ] ft_substr.c
+- [x] ft_substr.c
 - [ ] ft_strjoin.c
 - [ ] ft_strtrim.c
 - [ ] ft_split.c
