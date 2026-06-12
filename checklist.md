@@ -49,7 +49,7 @@
 - [ ] ft_split.c
 - [ ] ft_itoa.c
 - [ ] ft_strmapi.c
-- [ ] ft_striteri.c
+- [x] ft_striteri.c
 
 ### Escrita em File Descriptors
 - [x] ft_putchar_fd.c
