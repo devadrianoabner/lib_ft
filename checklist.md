@@ -59,7 +59,7 @@
 
 ---
 
-## Parte 3: (Listas Encadeadas)
+## Parte 3: (Listas Encadeadas) - verificar includes das libs e norminette
 - [x] ft_lstnew.c
 - [x] ft_lstadd_front.c
 - [x] ft_lstsize.c
