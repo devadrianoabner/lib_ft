@@ -48,7 +48,7 @@
 - [ ] ft_strtrim.c
 - [ ] ft_split.c
 - [ ] ft_itoa.c
-- [ ] ft_strmapi.c
+- [x] ft_strmapi.c
 - [x] ft_striteri.c
 
 ### Escrita em File Descriptors
