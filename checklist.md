@@ -44,7 +44,7 @@
 
 ### Manipulação Avançada de Strings
 - [x] ft_substr.c
-- [ ] ft_strjoin.c
+- [x] ft_strjoin.c
 - [ ] ft_strtrim.c
 - [ ] ft_split.c
 - [ ] ft_itoa.c
