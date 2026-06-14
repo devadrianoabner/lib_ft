@@ -47,7 +47,7 @@
 - [x] ft_strjoin.c
 - [x] ft_strtrim.c
 - [ ] ft_split.c
-- [ ] ft_itoa.c
+- [x] ft_itoa.c
 - [x] ft_strmapi.c
 - [x] ft_striteri.c
 
