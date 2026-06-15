@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/15 16:46:30 by adrianda          #+#    #+#             */
+/*   Updated: 2026/06/15 16:47:00 by adrianda         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_filter(char c, const char *set)
@@ -16,14 +28,14 @@ int	ft_filter(char c, const char *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *s2;
+	char	*s2;
 	size_t	i;
 	size_t	j;
 
-	if(!s1 || !set)
+	if (!s1 || !set)
 		return (NULL);
 	i = 0;
-	if(s1[i] == 0)
+	if (s1[i] == 0)
 		return (ft_strdup(""));
 	j = ft_strlen(s1) - 1;
 	while (s1[i] != 0 && ft_filter(s1[i], set))
