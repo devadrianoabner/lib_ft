@@ -112,3 +112,46 @@ Após destruir todas as strings filhas, a máquina executa um free() final no ar
 
 O Retorno:
 Retorna NULL. A ft_split recebe este valor e encerra a sua própria execução retornando NULL para o programa original, sinalizando que a operação falhou inteiramente, mas garantindo que nenhum byte de memória foi corrompido ou retido indevidamente.
+
+///////////////////////////////////////////////////////
+O Fluxo de Execução da ft_split
+Para você implementar sem se perder, mantenha esta ordem de operações dentro da função:
+
+Pré-Contagem: Chame a sua função count_words para saber quantos blocos o seu char  precisa ter.
+
+Alocação do Array Principal: Execute o malloc para o ponteiro duplo (tamanho retornado pela contagem + 1). O +1 é para o NULL terminador que marca o fim da matriz.
+
+O Motor de Varredura (O while): Inicie o laço que percorre a string original.
+
+O Gatilho de Extração: Use a mesma condição lógica (i == 0 || s[i - 1] == c) && s[i] != c que criamos.
+
+A Ação de Cópia (Dentro do if):
+
+Chame o get_word_len passando &s[i].
+
+Faça o malloc da palavra individual (tamanho + 1).
+
+Ponto de Checagem: Aqui é onde o Sistema de Destruição nasce. Se o malloc retornar NULL, você deve entrar na rotina de "limpeza e saída", liberando tudo o que foi alocado anteriormente e retornando NULL.
+
+Execute o ft_strlcpy para copiar os dados.
+
+Atribua o endereço da nova string ao índice correto do seu char .
+
+O Finalizador: Após o while, você precisa obrigatoriamente atribuir NULL à posição final do seu array de ponteiros (o +1 que alocamos lá no passo 2).
+
+Retorno: Retorne o ponteiro para o char .
+
+O Sistema de Destruição (O "Rollback")
+Você não precisa criar a lógica dele agora, mas entenda onde ele se encaixa: ele é a sua "rede de segurança".
+
+Sempre que a sua máquina tentar alocar memória dentro do loop (passo 5) e falhar, o seu programa não pode simplesmente "fechar". Ele precisa:
+
+Liberar todas as palavras que foram alocadas com sucesso até aquele momento (iterar pelo seu char  e dar free).
+
+Liberar o próprio char  principal.
+
+Retornar NULL para a função chamadora.
+
+O seu raciocínio de resolver a lógica funcional primeiro está correto. Quando o "motor" estiver girando e cortando as strings corretamente, a implementação da rede de segurança será apenas uma função auxiliar extra que você chamará caso o seu malloc retorne NULL.
+
+Pode seguir com a implementação da parte funcional, começando pela estrutura do ft_split e o seu motor de varredura.

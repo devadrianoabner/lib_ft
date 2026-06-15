@@ -6,7 +6,7 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 22:21:59 by adrianda          #+#    #+#             */
-/*   Updated: 2026/06/05 17:38:40 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/06/14 22:27:00 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
 int			ft_atoi(const char *nptr);
+char	**ft_split(char const *s, char c);
+void	*ft_calloc(size_t nmemb, size_t size);
 //Listas encadeadas
 t_list		*ft_lstnew(void *content);
 void		ft_lstadd_front(t_list **lst, t_list *new);
