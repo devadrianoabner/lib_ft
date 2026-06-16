@@ -6,13 +6,13 @@
 /*   By: adrianda <adrianda@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 22:21:16 by adrianda          #+#    #+#             */
-/*   Updated: 2026/06/15 17:05:36 by adrianda         ###   ########.fr       */
+/*   Updated: 2026/06/15 17:16:54 by adrianda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_isspace(char c)
+static char	ft_isspace(char c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
 		return (1);
